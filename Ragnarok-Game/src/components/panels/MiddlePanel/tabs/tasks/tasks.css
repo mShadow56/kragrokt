@@ -1,0 +1,105 @@
+.tasks-container {
+  position: absolute;
+  height: calc(var(--hd-height) * (14/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: calc(var(--hd-width) * 0.025);
+  right: calc(var(--hd-width) * 0.025);
+}
+
+.tasks-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: calc(var(--hd-width) * 0.3);
+  height: calc(var(--hd-height) * (1/15));
+  margin-left: calc(var(--hd-width) * 0.025);
+  margin-right: calc(var(--hd-width) * 0.025);
+}
+
+.hero-buttons-tab-bar{
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  width: calc(var(--hd-width) * 0.3);
+  height: calc(var(--hd-height) * (1/15));
+  margin-left: calc(var(--hd-width) * 0.025);
+  margin-right: calc(var(--hd-width) * 0.025);
+}
+
+#new-task-button, #delete-task-button, #deploy-task-button {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.task-settings {
+  width: calc(var(--hd-width) * 0.35);
+  height: calc(var(--hd-height) * (6/15));
+}
+
+.select-setting {
+  display: grid;
+  height: calc(var(--hd-height) * (1/15));
+  margin-left: 24px;
+  grid-template-columns: repeat(2, auto);
+  align-items: center; /* Center vertically */
+}
+
+.select-label {
+  width: calc(var(--hd-width) * 0.075);
+}
+
+.select-box {
+  position: relative;
+  width: 256px;
+  height: 48px;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.select-box-background {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.select-box-frame {
+  top: 3px;
+  position: absolute;
+}
+
+.select-value {
+  position: absolute;
+  top: 13px;
+  left: 16px;
+  height: 22px;
+  width: calc(var(--hd-width) * (1/8));
+  border: none;
+  font-size: 16px;
+  font-family: "Sylfaen", "Fantasy";
+  font-weight: bold;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.select-dropdown {
+  /* Need relevant properties to function as a custom select options box */
+  border: 2px solid #A19D94;
+  box-sizing: border-box;
+}
+
+.task-settings-lower {
+  display: grid;
+  width: 416px;
+  height: 192px;
+  grid-template-columns: repeat(2, 208px);
+  margin-left: 24px;
+}
+
+#add-to-inventory, #remove-from-inventory {
+  width: 64px;
+  height: 24px;
+  margin: 0px;
+}

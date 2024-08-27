@@ -1,0 +1,131 @@
+
+
+.hero-container {
+  position: absolute;
+  height: calc(var(--hd-height) * (14/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: calc(var(--hd-width) * 0.025);
+  right: calc(var(--hd-width) * 0.025);
+}
+
+.hero-subtitle {
+    height: calc(var(--hd-height) * (1/30));
+    margin-top: calc(var(--hd-height) * (1/60));
+    margin-bottom: calc(var(--hd-height) * (1/60));
+    margin-left: calc(var(--hd-width) * 0.0125);
+    margin-right: calc(var(--hd-width) * 0.0125);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-view {
+    display: flex;
+    height: calc(var(--hd-height) * (6/15));
+    right: 0;
+}
+
+.hero-portrait {
+    width: 144px;
+    height: 208px;
+    position: relative; /* Make the div a positioning context */
+    margin-left: calc(var(--hd-width) * 0.0125);
+    margin-right: calc(var(--hd-width) * 0.0125);
+}
+
+#hero-background, #hero-image {
+    padding: 8px;
+    position: absolute; /* Position the images absolutely within the HeroPortrait div */
+    top: 0; /* Align the top edges of the images */
+    left: 0; /* Align the left edges of the images */
+}
+
+#hero-frame {
+    position: absolute; /* Position the images absolutely within the HeroPortrait div */
+    top: 0; /* Align the top edges of the images */
+    left: 0; /* Align the left edges of the images */
+}
+
+.info-box {
+    display: flex; /* Changed from grid to flex */
+    flex-direction: column; /* Stacks InfoPairs vertically */
+    width: calc(var(--hd-width) * 0.2125);
+    height: calc(var(--hd-height) * (6/15));
+}
+
+.info-pair {
+    display: flex;
+    flex-direction: row;
+    height: 22px;
+    align-items: center; /* Aligns the info-label and info-value vertically */
+    gap: 5px; /* Adjusts the gap between info-label and info-value */
+}
+
+.info-label {
+    height: 22px;
+    align-items: center; /* Center vertically */
+}
+
+.info-value {
+    height: 22px;
+    align-items: center; /* Center vertically */
+}
+
+.stats-container {
+    display: grid;
+    position: relative;
+    grid-gap: 10px;
+    width: calc((var(--hd-width) - 4px) * 0.3);
+    height: calc((var(--hd-height) - 4px) * (6/15));
+    margin-left: calc(var(--hd-width) * 0.025);
+    margin-right: calc(var(--hd-width) * 0.025);
+    background-color: #e3cda2;
+    border: 2px solid #A19D95;
+    border-radius: 1px;
+    outline: solid 2px #3F200F;
+    box-shadow: 0 0 0 3pt #3F200F;
+}
+
+.lower-tab-bar {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 56px 136px 96px 96px;
+    height: calc(var(--hd-height) * (1/15));
+    left: 0;
+    right: 0;
+}
+
+.lower-tab-title {
+    margin: 0;
+    width: calc(var(--hd-width) * 0.0375);
+    height: calc(var(--hd-height) * (2/45));
+    margin-left: 6px;
+    margin-right: 2px;
+    margin-top: 2px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#stats-button, #skills-button, #other-button {
+    width: calc(var(--hd-width) * 0.06875);
+    height: calc(var(--hd-height) * (2/45));
+    margin: 0;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+
+#other-button {
+    width: calc(var(--hd-width) * 0.1);
+}
+
+#hero-buttons {
+    height: calc(var(--hd-height) * (1/15));
+    left: 0;
+    bottom: 0;
+}
+
+#create-button, #save-button, #level-button {
+  margin-left: 16px;
+  margin-right: 16px;
+}

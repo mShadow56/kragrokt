@@ -1,0 +1,2 @@
+
+interface Trophy extends StorageItem { }

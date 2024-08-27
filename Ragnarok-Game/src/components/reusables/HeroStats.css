@@ -1,0 +1,150 @@
+
+
+.hero-stats-lvl-button {
+  height: 26px;
+  width: 26px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #d3d3d3;
+  background-color: #613414;
+  border: 1px solid rgb(73, 73, 73);
+  border-radius: 8px;
+  font-family: "Papyrus", "Fantasy";
+  font-weight: bold;
+  padding: 0;
+}
+
+.hero-stats-lvl-button:active {
+  background-color: #61412d;
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.hero-stats-lvl-button:hover {
+  background-color: #311b15
+}
+
+.hero-stats-bar {
+  display: grid;
+  position: absolute;
+  grid-template-columns: repeat(4, 96px);
+  height: calc(var(--hd-height) * (1/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: 0;
+  right: 0;
+}
+
+.hero-stats-subtitle {
+    margin: 0;
+    width: 96px;
+    height: calc(var(--hd-height) * (1/30));
+    text-align: center;
+    font-size: 18px;
+}
+
+.hero-stats-box {
+    display: grid;
+    position: absolute;
+    grid-template-columns: repeat(4, 48px);
+    top: calc(var(--hd-height) * (2/15));
+}
+
+#primary-stats {
+    left: 0;
+    right: 50%;
+}
+
+#secondary-stats {
+    left: 50%;
+    right: 0;
+}
+
+.hero-stats-stat-label {
+    height: 22px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    align-items: center; /* Center vertically */
+}
+
+.hero-stats-stat-value {
+    height: 22px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    left: calc(var(--hd-height) * (1/18));
+    align-items: center; /* Center vertically */
+    text-align: center;
+}
+
+#unlvl-con, #unlvl-int, #unlvl-str, #unlvl-dex, #unlvl-wis {
+    margin-left: 17px;
+    margin-right: 5px;
+}
+
+#lvl-con, #lvl-int, #lvl-str, #lvl-dex, #lvl-wis {
+    margin-left: 5px;
+    margin-right: 17px;
+}
+
+.hero-stats-container {
+  display: grid;
+  position: relative;
+  grid-gap: 10px;
+  width: calc((var(--hd-width) - 4px) * 0.3);
+  height: calc((var(--hd-height) - 4px) * (6/15));
+  margin-left: calc(var(--hd-width) / 64);
+  margin-right: calc(var(--hd-width) / 64);
+  background-color: #e3cda2;
+  border: 2px solid #A19D95;
+  border-radius: 1px;
+  outline: solid 2px #3F200F;
+  box-shadow: 0 0 0 3pt #3F200F;
+}
+
+.hero-stats-lower-tab-bar {
+  display: grid;
+  position: absolute;
+  grid-template-columns: 56px 136px 96px 96px;
+  height: calc(var(--hd-height) * (1/15));
+  left: 0;
+  right: 0;
+}
+
+.hero-stats-lower-tab-title {
+  margin: 0;
+  width: calc(var(--hd-width) * 0.0375);
+  height: calc(var(--hd-height) * (2/45));
+  margin-left: 6px;
+  margin-right: 2px;
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#stats-button, #skills-button, #other-button {
+  width: calc(var(--hd-width) * 0.06875);
+  height: calc(var(--hd-height) * (2/45));
+  margin: 0;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 2px;
+  border-radius: 4px;
+}
+
+#other-button {
+  width: calc(var(--hd-width) * 0.1);
+}
+
+#hero-buttons {
+  height: calc(var(--hd-height) * (1/15));
+  left: 0;
+  bottom: 0;
+}
+
+#create-button, #save-button, #level-button {
+margin-left: 16px;
+margin-right: 16px;
+}

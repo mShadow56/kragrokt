@@ -1,0 +1,77 @@
+:root {
+	/* HD resolution */
+	--hd-width: 1280px;
+	--hd-height: 720px;
+	/* Full HD resolution */
+	--full-hd-width: 1920px;
+	--full-hd-height: 1080px;
+	/* Quad HD resolution */
+	--quad-hd-width: 2560px;
+	--quad-hd-height: 1440px;
+	/* Ultra (4k) HD resolution */
+	--ultra-hd-width: 3840px;
+	--ultra-hd-height: 2160px;
+}
+
+button{
+	cursor: url('../assets/images/01.png'), auto;
+}
+
+label{
+	cursor: url('../assets/images/01.png'), auto;
+
+}
+
+select{
+	cursor: url('../assets/images/01.png'), auto;
+
+}
+
+option{
+	cursor: url('../assets/images/01.png'), auto;
+
+}
+
+body {
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center; /* Center vertically */
+	min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+	margin: 0; /* Remove default margin */
+	padding: 0; /* Remove default padding */
+	box-sizing: border-box; /* Include padding and border in element's total width and height */
+	user-select: none;
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.hd-window {
+	display: flex;
+	width: calc(var(--hd-width)+10);
+	height: calc(var(--hd-height)+10);
+	margin: auto;
+	border: 10px solid black;
+	font-size: 16px;
+	font-family: "Sylfaen", "Fantasy";
+	font-weight: bold;
+	position: relative;
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.hd-window::-webkit-scrollbar {
+    display: none;
+}
+
+
+.hd-window:hover {
+	cursor: url('../assets/images/01.png'), auto;
+}
+
+.mainGame{
+	position: relative;
+	display: flex;
+	height: var(--hd-height);
+	width: var(--hd-width);
+}

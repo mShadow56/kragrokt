@@ -1,0 +1,166 @@
+
+.scenario{
+    background-color: rgb(197, 151, 92);
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    display: block;
+    margin-left: 10%;
+    margin-top: 4%;
+    border: 4px solid rgb(133, 71, 1);
+    }
+
+
+ .scenarioTop{
+    display: flex;
+    background-color: #e3b554;
+    height: 40px;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom: 2px solid black;
+    justify-content: center;
+ }   
+
+ .scenarioTopTitle{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+
+.scenarioTop img{
+    margin-top:0;
+    margin-left: 949px;
+    width: 35px;
+    height: 35px;
+    position: fixed;
+    border: 4px solid rgb(117, 71, 10);
+    border-radius: 5px;
+
+}
+
+.scenarioTop img:hover{
+    border: 4px solid rgb(216, 86, 0);
+}
+
+.scenarioBottom{
+    position: absolute;
+height: 514px;
+width: 1024px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+justify-items: center;
+overflow-x: hidden;
+-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.scenarioStory{
+    position: absolute;
+height: 514px;
+width: 760px;
+display: grid;
+justify-items: center;
+overflow-x: hidden;
+-ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+scrollbar-width: none; /* Hide scrollbar for Firefox */
+background-color: #edc774;
+border-left: 10px solid rgb(136, 90, 29);
+border-right:10px solid rgb(136, 90, 29);
+border-radius:1px;
+
+}
+
+.scenarioBottom h2{
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.scenarioBottom li{
+    margin: 40px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 20px;
+
+}
+.NextDayButton{
+    height: 50px;
+    width: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #a6843a;
+    color: #e0e0e0;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.NextDayButton:hover{
+    color: white;
+    background-color: #6e4f0c;
+}
+
+
+
+.scenarioBottom,.scenarioStory {
+    overflow-y: auto; /* Enable vertical scrolling */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* For WebKit browsers (Chrome, Safari, Opera) */
+.scenarioBottom::-webkit-scrollbar,
+.scenarioStory::-webkit-scrollbar {
+    display: none;
+}
+
+.scenarioContentWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.storyLogButtons-container{
+    width: 100%;
+    height:40px;
+    background-color: rgb(136, 90, 29);
+}
+
+.storyLogButtons{
+    display: flex;
+    position: relative;
+    left: 100px;
+    width: 100%;
+}
+
+.storyLogButtons button{
+    height: 40px;
+    width: 100px;
+    color: rgb(57, 57, 57);
+    border-bottom: 0;
+    font-weight: bold;
+}
+
+.storyLogButtons button:hover{
+    color: white;
+}
+
+.buttonRefStory{
+    background-color:#edc774;
+}
+
+.buttonRegLog{
+    background-color: #8e7a4e;
+}
+
+.nextDayContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(136, 90, 29);
+    position: absolute;
+    bottom: 0;
+}

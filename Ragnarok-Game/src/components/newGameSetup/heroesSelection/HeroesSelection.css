@@ -1,0 +1,60 @@
+
+
+
+.heroes-selection-container {
+  width: var(--hd-width);
+  height: var(--hd-height);
+  align-items: center; /* Added for horizontal centering */
+  position: relative;
+  background-color: #B1825C;
+}
+
+.heroes-container {
+  position: absolute;
+  width: calc(var(--hd-width) / 3 - 96px);
+  height: calc(var(--hd-height) * 0.8 - 96px);
+  padding: 16px;
+  margin: 32px;
+  outline: dashed 4px #2f1911;
+  background-color: #E5C38A;
+}
+
+#hero-pool-container {
+  left: 0;
+}
+
+#chosen-heroes-container {
+  right: 0;
+}
+
+.selected-hero-container {
+  position: absolute;
+  width: calc(var(--hd-width) / 3);
+  height: calc(var(--hd-height) * 0.8);
+  padding: 0px;
+  margin: 0px;
+  outline: dashed 4px #2f1911;
+  left: calc(var(--hd-width) / 3);
+  top: 32px;
+  background-color: #E5C38A;
+}
+
+.set-sail-button {
+  width: 128px;
+  height: 32px;
+  position: absolute;
+  left: calc(var(--hd-width) * 0.5 - 64px);
+  bottom: 64px;
+  outline: solid 4px #2f1911;
+  background-color: #F6EBE5;
+  text-align: center;
+  font-size: 24px;
+}
+
+.set-sail-button:hover {
+  background-color: #B4C487;
+}
+
+.set-sail-button:active {
+  background-color: #83B2BC;
+}

@@ -1,0 +1,2 @@
+
+interface Equipment extends StorageItem { }

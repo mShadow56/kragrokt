@@ -1,0 +1,120 @@
+
+
+.camp-container {
+  position: absolute;
+  height: calc(var(--hd-height) * (14/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: calc(var(--hd-width) * 0.025);
+  right: calc(var(--hd-width) * 0.025);
+}
+
+.camp-map {
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+.camp-image {
+  position: absolute;
+  width: 400px;
+}
+
+#camp-image {
+  top: 8px;
+}
+
+#camp-frame {
+  width: 416px;
+}
+
+.building-slot {
+  width: 64px;
+  height: 64px;
+}
+
+.building-slot:hover > .building-icon {
+  stroke: #d2db7f;
+}
+
+.building-box {
+  width: 64px;
+  height: 64px;
+  fill: #8c5a3c;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-opacity: 1;
+  paint-order: normal;
+}
+
+.building-circle {
+  display: inline;
+  fill-rule: evenodd;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+  paint-order: normal
+}
+
+.building-diamond {
+  fill: #8c5a3c;
+  fill-opacity: 1;
+  stroke: #000000;
+  stroke-width: 6;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+  paint-order: normal
+}
+
+.building-icon {
+  width: 36px;
+  height: 36px;
+  display: inline;
+  fill: none;
+  stroke: #A4B28E;
+  stroke-width: 6;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1
+}
+
+.building-info-container {
+  position: relative;
+  top: calc(var(--hd-height) * (9/15));
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.building-info-title {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.building-info-details {
+  font-size: 16px;
+}
+
+.upgrade-building-button {
+  width: 64px;
+  height: 24px;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  text-align: center;
+  background-color: #fcf5e5;
+  border: 2px solid #A19D95;
+  border-radius: 1px;
+  outline: solid 3px #3F200F;
+  box-shadow: 0 0 0 3pt #3F200F;
+}

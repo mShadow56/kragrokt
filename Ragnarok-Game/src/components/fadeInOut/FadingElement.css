@@ -1,0 +1,30 @@
+/* FadingElement.css */
+.fading-element {
+  background-color: rgb(37, 37, 37);
+  opacity: 0%; /* Initial opacity */
+  font-size: 18px;
+  transition: opacity 3s ease-in, opacity 1s ease-out; /* Transition duration for fade-in */
+  width: var(--hd-width);
+  height: var(--hd-height);
+  position: absolute;
+  color: rgb(219, 210, 210);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  overflow: hidden;
+}
+
+.text {
+  font-size: 48px; /* Start small */
+  animation: zoomIn 4s forwards; /* Apply the animation, it will run once and keep the final state */
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5); /* Grow to 1.5 times the original size */
+  }
+}

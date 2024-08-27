@@ -1,0 +1,107 @@
+
+.map-container {
+  position: absolute;
+  height: calc(var(--hd-height) * (14/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: calc(var(--hd-width) * 0.025);
+  right: calc(var(--hd-width) * 0.025);
+}
+
+.map-box {
+  height: calc(var(--hd-height) * (9/15));
+  position: relative; /* Make the div a positioning context */
+  margin-left: calc(var(--hd-width) * 0.0125);
+  margin-right: calc(var(--hd-width) * 0.0125);
+}
+
+#map-image {
+  padding: 8px;
+  position: absolute; /* Position the images absolutely within the Map-Box div */
+}
+
+#map-frame {
+  position: absolute; /* Position the images absolutely within the Map-Box div */
+}
+
+
+/* Define styles for different zones */
+.map-zones {
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  stroke: #000000; /* Border color for zones */
+  stroke-width: 1;
+}
+
+.path-zone {
+  fill: #a0881e; /* Default color for zones */
+  opacity: 20%;
+}
+
+.path-zone:hover {
+  fill: #a0881e; /* Color for zones when hovered */
+  opacity: 40%;
+}
+
+.map-location-field {
+  position: relative; /* Make the div a positioning context */
+}
+
+.map-location-title {
+  display: flex;
+  width: 240px;
+  position: absolute;
+  left: calc(50% - 120px);
+  top: -36px;
+  justify-content: center;
+  background-color: #a0881e;
+  outline: 2px solid black;
+  font-size: 24px;
+}
+
+.map-location-explored {
+  display: flex;
+  width: 100px;
+  position: relative;
+  left: calc(50% - 50px);
+  top: -4px;
+  justify-content: center;
+  background-color: rgb(177, 102, 16);
+  outline: 1px solid black;
+  border-radius: 4px;
+}
+
+.map-content-container {
+  position: relative;
+  margin-left: calc(var(--hd-width) * 0.0125);
+  margin-right: calc(var(--hd-width) * 0.0125);
+}
+
+.map-content-title {
+  font-size: 32px;
+}
+
+.map-location-content {
+  margin-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(2,170px);
+}
+
+.available-task-box{
+  height: 40px;
+  width: 160px;
+  background-color: grey;
+  border: 3px dashed black;
+  margin-bottom: 5px;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+
+.available-task-box:hover{
+  background-color: rgb(167, 167, 167);
+}
+
+.available-task-box:active{
+  background-color: rgb(84, 84, 84);
+}

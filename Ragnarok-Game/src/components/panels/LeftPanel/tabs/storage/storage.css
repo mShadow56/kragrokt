@@ -1,0 +1,93 @@
+
+
+.StorageContainer {
+    position: absolute;
+    top: 48px;
+    left:20px;
+    right: 20px;
+    margin-top: 14px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: var(--small-screen-width);
+    height: 450px;
+    background-color: #79663f;
+    border: 4px solid #383737;
+    border-radius: 5px;
+
+}
+
+ /* Style for the grid */
+ .inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(4,400px);
+    overflow-x: hidden;
+    margin-left: 7px;
+    margin-top: 5px;
+    height: 500px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    width: calc(var(--small-screen-width) * 0.05);
+}
+
+
+/* For WebKit browsers (Chrome, Safari, Opera) */
+
+.inventory-grid::-webkit-scrollbar {
+    display: none;
+}
+
+
+  /* Style for inventory item */
+  .inventory-item {
+    width: 76px;
+    height: 76px;
+    margin: 3px;
+    border: 5px solid rgb(75, 72, 72);
+    background-color: #1f1f1f;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 10px;
+  }
+
+  .inventory-item:hover{
+    background-color: #817474;
+  }
+
+
+
+
+.item-wrapper {
+    position: relative;
+    display: inline-block; /* Ensures proper block-level behavior */
+}
+
+.item-quantity {
+    position: absolute;
+    bottom: 9px;
+    right: 8px;
+    color: white;
+    padding: 2px 5px;
+}
+
+.item-info{
+
+    height: 140px;
+    width: 400px;
+    position: absolute;
+    display: flex;
+    margin-top: 550px;
+    margin-left: 46px;
+    background-color: #636363;
+    border: 5px solid #1f1f1f;
+}
+
+.item-info-image{
+height: 120px;
+width: 120px;
+margin:10px;
+}
+
+.item-info-text h1,h3{
+  margin: 5px;
+  
+}

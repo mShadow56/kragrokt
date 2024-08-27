@@ -1,0 +1,116 @@
+.optionsModal{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.optionsBackground {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(40, 40, 40);
+    opacity: 0.5;
+}
+
+.modalFrame {
+    position: absolute;
+    background-color: rgb(152, 107, 47);
+    height: 40%;
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 18%;
+    border: 10px solid rgb(79, 43, 2);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 288px;
+    width: 512px;
+
+}
+
+
+
+.saveButton{
+    height:40px;
+    width: 190px;
+    border: 3px solid black;
+    background-color: rgb(92, 29, 29);
+    color: white;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.saveButton:hover{
+    background-color: brown;
+}
+
+.saveButton:active {
+    background-color: #241811;
+    transform: translateY(4px);
+}
+
+
+.sliderFrame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height:60px;
+    width: 185px;
+    border: 3px solid black;
+    background-color: rgb(92, 29, 29);
+    color: white;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.sliderFrame:hover{
+    background-color: brown;
+}
+
+.returnToMenuButton{
+    height:40px;
+    width: 190px;
+    border: 3px solid black;
+    background-color: rgb(92, 29, 29);
+    color: white;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.returnToMenuButton:hover{
+    background-color: brown;
+}
+
+.returnToMenuButtonveButton:active {
+    background-color: #241811;
+    transform: translateY(4px);
+}
+
+
+.speakerIconInOptions {
+    height: 30px;
+    width: 30px;
+    left: 0;
+    padding-right: 5px;
+    margin-left: 5px;
+    
+}
+
+.volumeContents{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.volumeSlider{
+width: 130px;
+}

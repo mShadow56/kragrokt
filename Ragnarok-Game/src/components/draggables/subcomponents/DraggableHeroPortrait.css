@@ -1,0 +1,54 @@
+
+
+.draggable-portrait {
+  width: 72px;
+  height: 104px;
+  position: absolute; /* Make the div a positioning context */
+}
+
+.draggable-portrait-img {
+  position: absolute;
+  width: 64px;
+  height: 96px;
+  padding: 4px;
+}
+
+#draggable-hero-image {
+  top: -4px; /* 0px */
+}
+
+#draggable-hero-frame {
+  width: 72px;
+  height: 104px;
+  padding: 0px;
+}
+
+.draggable-hero-label {
+  position: absolute;
+  width: calc(1 / 1.125 * 100%);
+  height: calc(24 / 104 * 100%);
+  background-color: rgba(252, 245, 229, 1.0); /* rgba(red, green, blue, alpha) */
+  left: calc(1 / 18 * 100%);
+  bottom: calc(1 / 26 * 100%);
+  outline: solid #A19D95 1px;
+}
+
+.draggable-hero-value {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  margin: 0;
+  position: relative;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  opacity: .99;
+}
+
+#draggable-hero-name {
+  top: calc(-1 / 24 * 100%);
+}
+
+#draggable-hero-level {
+  top: calc(-2 / 24 * 100%);
+}

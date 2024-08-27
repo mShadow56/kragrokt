@@ -1,0 +1,46 @@
+/* panels css */
+
+.large-panel {
+  position: relative;
+  width: calc(var(--hd-width) * 0.4);
+  height: var(--hd-height);
+  background-color: #BEA576;
+}
+
+.small-panel {
+  display: flex;
+  position: relative;
+  width: calc(var(--hd-width) * 0.2);
+  height: var(--hd-height);
+  background-color: #BEA576;
+}
+
+.wooden-frame-left {
+  position: absolute;
+  left: 0; /* Position at the far left of .LargePanel */
+  width: calc(var(--hd-width) * 0.025);
+  height: var(--hd-height);
+  background-color: #311b15;
+}
+
+.wooden-frame-right {
+  position: absolute;
+  right: 0; /* Position at the far right of .LargePanel */
+  width: calc(var(--hd-width) * 0.025);
+  height: var(--hd-height);
+  background-color: #311b15;
+}
+
+.small-panel button {
+  width: 192px;
+  height: 36px;
+  background-color: rgb(129, 8, 8);
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.small-panel button:hover {
+  background-color: rgb(85, 7, 7);
+  text-decoration: underline;
+}

@@ -1,0 +1,2 @@
+
+interface Potion extends StorageItem { }

@@ -1,0 +1,70 @@
+
+
+.hero-profile-container {
+  position: absolute;
+  height: calc(var(--hd-height) * (14/15));
+  top: calc(var(--hd-height) * (1/15));
+  left: calc(var(--hd-width) * 0.025);
+  right: calc(var(--hd-width) * 0.025);
+}
+
+.hero-profile-subtitle {
+    height: calc(var(--hd-height) * (1/30));
+    margin-top: calc(var(--hd-height) * (1/60));
+    margin-bottom: calc(var(--hd-height) * (1/60));
+    margin-left: calc(var(--hd-width) * 0.0125);
+    margin-right: calc(var(--hd-width) * 0.0125);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.hero-profile-view {
+    display: flex;
+    height: calc(var(--hd-height) * (10/32));
+}
+
+.hero-profile-portrait {
+    width: 144px;
+    height: 208px;
+    position: relative; /* Make the div a positioning context */
+    margin-left: calc(var(--hd-width) * 0.0125);
+    margin-right: calc(var(--hd-width) * 0.0125);
+}
+
+#hero-profile-background, #hero-profile-image {
+    padding: 8px;
+    position: absolute; /* Position the images absolutely within the HeroPortrait div */
+    top: 0; /* Align the top edges of the images */
+    left: 0; /* Align the left edges of the images */
+}
+
+#hero-profile-frame {
+    position: absolute; /* Position the images absolutely within the HeroPortrait div */
+    top: 0; /* Align the top edges of the images */
+    left: 0; /* Align the left edges of the images */
+}
+
+.hero-profile-info-box {
+    display: flex; /* Changed from grid to flex */
+    flex-direction: column; /* Stacks InfoPairs vertically */
+    width: calc(var(--hd-width) * 0.2125);
+    height: calc(var(--hd-height) * (6/15));
+}
+
+.hero-profile-info-pair {
+    display: flex;
+    flex-direction: row;
+    height: 22px;
+    align-items: center; /* Aligns the info-label and info-value vertically */
+    gap: 5px; /* Adjusts the gap between info-label and info-value */
+}
+
+.hero-profile-info-label {
+    height: 22px;
+    align-items: center; /* Center vertically */
+}
+
+.hero-profile-info-value {
+    height: 22px;
+    align-items: center; /* Center vertically */
+}
